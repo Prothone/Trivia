@@ -1,0 +1,24 @@
+.score1, .score2 {
+font-weight:bold;
+font-size:150px;
+position:absolute;
+bottom:0;
+border : 2px solid #ccc;
+width:180px;
+text-align:center;
+cursor:crosshair;
+-webkit-user-select: none;  
+-moz-user-select: none;    
+-ms-user-select: none;      
+user-select: none;
+}
+
+.score1 {
+left:0;
+color: #ff4545;
+}
+
+.score2 {
+right:0;
+color: #4d4dff;
+}

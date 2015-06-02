@@ -6,6 +6,7 @@ html
     title Trivia Quiz
 
     link(rel='stylesheet', type='text/css', href='build/build.css')
+    link(rel='stylesheet', type='text/css', href='build/customBuild.css')
 
   body
 
@@ -52,7 +53,12 @@ html
                 h6 Pada Quiz bagian isian, pada setiap pertanyaan yang ada akan diberikan jawaban berupa range yang tersedia (Misalnya <0..10>), pada quiz bagian ini tidak diberlakukan sistem menekan tombol, setiap tim berhak memberikan jawaban yang ada, jika salah satu tim menjawab dengan nilai benar/mendekati, maka dialah yang mendapatkan poin.
             li
                 h6 Jika terjadi hal dimana kedua tim menjawab dengan jawaban persis yang benar, maka kedua tim tersebut sama-sama akan mendapatkan nilai.
-
+      
+      section
+        h3 Soal X
+        div(class='score1' onClick='incrementValue1()')
+        div(class='score2' onClick='incrementValue2()')
+      
       section
         h2 Bullet List
         h3.bullet Powered by <a href="https://github.com/markdalgleish/bespoke-bullets">bespoke-bullets</a>
@@ -96,3 +102,4 @@ html
             a(href='http://twitter.com/markdalgleish')  -@markdalgleish
 
     script(src='build/build.js')
+    script(src='build/customBuild.js')

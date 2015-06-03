@@ -12,7 +12,10 @@ cursor:crosshair;
 -ms-user-select: none;      
 user-select: none;
 }
-
+h6{
+    font-size: 12px;
+    text-align: left;
+}
 .score1 {
 left:0;
 color: #ff4545;

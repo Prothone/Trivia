@@ -9,7 +9,16 @@ html
     link(rel='stylesheet', type='text/css', href='build/customBuild.css')
 
   body
-
+    
+    audio(id='audioCorrect')
+      source(src='music/correct.ogg' type='audio/ogg')
+    audio(id='audioWrong')
+      source(src='music/wrong.ogg' type='audio/ogg')
+    audio(id='audioLock')
+      source(src='music/lock.ogg' type='audio/ogg')
+    audio(id='rules')
+      source(src='music/rules.ogg' type='audio/ogg')
+    
     article
       section
         h2 Proyek akhir TKPPL
@@ -64,10 +73,10 @@ html
       section
         h3 Soal X
         div(class='choice')
-          div(class='correct' onClick='SelectedC()') A
-          div(class='wrong' onClick='SelectedW(0)') B
-          div(class='wrong' onClick='SelectedW(1)') C
-          div(class='wrong' onClick='SelectedW(2)') D
+          div(class='correct' onClick='SelectedC()' onmouseover='lock()') A
+          div(class='wrong' onClick='SelectedW(0)' onmouseover='lock()') B
+          div(class='wrong' onClick='SelectedW(1)' onmouseover='lock()') C
+          div(class='wrong' onClick='SelectedW(2)' onmouseover='lock()') D
         div(class='score1' onClick='incrementValue1()') 
         div(class='score2' onClick='incrementValue2()') 
       

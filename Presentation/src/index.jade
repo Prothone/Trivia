@@ -63,8 +63,13 @@ html
       
       section
         h3 Soal X
-        div(class='score1' onClick='incrementValue1()')
-        div(class='score2' onClick='incrementValue2()')
+        div(class='choice')
+          div(class='correct' onClick='SelectedC()') A
+          div(class='wrong' onClick='SelectedW(0)') B
+          div(class='wrong' onClick='SelectedW(1)') C
+          div(class='wrong' onClick='SelectedW(2)') D
+        div(class='score1' onClick='incrementValue1()') 
+        div(class='score2' onClick='incrementValue2()') 
       
       section
         h2 Bullet List

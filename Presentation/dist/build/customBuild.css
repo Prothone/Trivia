@@ -53,5 +53,28 @@ background-color:#f00;
 cursor:none;
 }
 
+.correct, .wrong, .correctSelected , .wrongSelected {
+width:180px;
+border : 2px solid #ccc;
+background : #eaeaea;
+padding : 5px;
+margin : 5px;
+}
+
+.correct:Hover, .wrong:Hover {
+background-color:#ffa800;
+cursor:none;
+}
+
+.correctSelected {
+background-color:#55ff00;
+cursor:none;
+}
+
+.wrongSelected {
+background-color:#f00;
+cursor:none;
+}
+
 .choice {
 }

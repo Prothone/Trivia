@@ -9,7 +9,16 @@ html
     link(rel='stylesheet', type='text/css', href='build/customBuild.css')
 
   body
-
+    
+    audio(id='audioCorrect')
+      source(src='music/correct.ogg' type='audio/ogg')
+    audio(id='audioWrong')
+      source(src='music/wrong.ogg' type='audio/ogg')
+    audio(id='audioLock')
+      source(src='music/lock.ogg' type='audio/ogg')
+    audio(id='rules')
+      source(src='music/rules.ogg' type='audio/ogg')
+    
     article
       section
         h2 Proyek akhir TKPPL
@@ -47,6 +56,8 @@ html
             li
                 h6 <strong>Pada Quiz kali ini terdapat</strong> : 10 soal dimana jenis-jenis pertanyaan akan berupa Pilihan Ganda, Value Estimation, dan True/False Question.
             li
+                h6 Setiap pertanyaan akan diberi waktu berpikir maksimal 15 detik dan jika tidak menjawab dalam waktu 15 detik maka pertanyaan tersebut secara otomatis akan dioper ke tim selanjutnya.
+            li
                 h6 Setiap pertanyaan yang benar akan diberikan bobot nilai.
             li
                 h6 Setiap sebuah pertanyaan selesai dibaca, para peserta wajib menekan tombol yang sudah disediakan, bagi yang duluan menekan tombol tersebut diperbolehkan untuk menjawab pertanyaan, ataupun boleh juga dioper kepada tim lawan, jika tim lawan salah menjawab, maka tim pertama akan mendapatkan poin tambahan dan jika tim kedua diperbolehkan untuk mengoper kembali pertanyaan yang dioper oleh tim pertama dan jika tim pertama tidak menjawab/salah menjawab, maka tim kedua akan mendapatkan nilai...(Jika tim yang dioper pertanyaanna oleh tim lawan dan mereka berhasil menjawab dengan benar, maka tim tersebut akan mendapatkan poin tambahan).
@@ -64,10 +75,10 @@ html
       section
         h3 Soal X
         div(class='choice')
-          div(class='correct' onClick='SelectedC()') A
-          div(class='wrong' onClick='SelectedW(0)') B
-          div(class='wrong' onClick='SelectedW(1)') C
-          div(class='wrong' onClick='SelectedW(2)') D
+          div(class='correct' onClick='SelectedC()' onmouseover='lock()') A
+          div(class='wrong' onClick='SelectedW(0)' onmouseover='lock()') B
+          div(class='wrong' onClick='SelectedW(1)' onmouseover='lock()') C
+          div(class='wrong' onClick='SelectedW(2)' onmouseover='lock()') D
         div(class='score1' onClick='incrementValue1()') 
         div(class='score2' onClick='incrementValue2()') 
       

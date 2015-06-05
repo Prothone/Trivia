@@ -26,7 +26,7 @@ right:0;
 color: #4d4dff;
 }
 
-.correct, .wrong, .correctSelected , .wrongSelected {
+.correct, .wrong, .correctSelected , .wrongSelected, .white {
 width:180px;
 border : 2px solid #ccc;
 background : #eaeaea;
@@ -38,27 +38,10 @@ margin : 5px;
 user-select: none;
 }
 
-.correct:Hover, .wrong:Hover {
-background-color:#ffa800;
+.white {
+background : none;
+background-color:none;
 cursor:none;
-}
-
-.correctSelected {
-background-color:#55ff00;
-cursor:none;
-}
-
-.wrongSelected {
-background-color:#f00;
-cursor:none;
-}
-
-.correct, .wrong, .correctSelected , .wrongSelected {
-width:180px;
-border : 2px solid #ccc;
-background : #eaeaea;
-padding : 5px;
-margin : 5px;
 }
 
 .correct:Hover, .wrong:Hover {

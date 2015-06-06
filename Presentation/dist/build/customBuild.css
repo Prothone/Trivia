@@ -46,30 +46,40 @@ margin : 5px;
 -ms-user-select: none;      
 user-select: none;
 width:180px;
+background:url("img/ch idle.jpg");
+background-size:180px 42px;
 }
 
 .white {
 cursor:none;
-cursor:none;
+background:url("img/ch idle.jpg");
+background-size:180px 42px;
 }
 
 .correct:Hover, .wrong:Hover {
 cursor:none;
+background:url("img/ch choose.jpg");
+background-size:180px 42px;
 }
 
 
 .correctSelected {
 cursor:none;
+background:url("img/ch right.jpg");
+background-size:180px 42px;
 }
 
 .wrongSelected {
 cursor:none;
+background:url("img/ch wrong.jpg");
+background-size:180px 42px;
 }
 
 .question {
 padding : 5px;
 border-radius:12px;
 width:80%;
+background:url("img/QBG.jpg");
 }
 
 .mc1,.mc4{

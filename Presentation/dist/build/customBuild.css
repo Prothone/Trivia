@@ -1,17 +1,29 @@
+@font-face {
+    font-family: ADigital;
+    src: url('DS-DIGIB.ttf');
+}
+
+.titleQ {
+color:white;
+}
+
 .score1, .score2 {
-font-weight:bold;
-font-size:150px;
+background-color:black;
+font-size:120px;
 position:absolute;
 bottom:0;
 border : 2px solid #ccc;
-width:180px;
-text-align:center;
+width:135px;
+height:135px;
+text-align:right;
 cursor:crosshair;
 -webkit-user-select: none;  
 -moz-user-select: none;    
 -ms-user-select: none;      
 user-select: none;
+font-family : ADigital;
 }
+
 h6{
     font-size: 12px;
     text-align: left;
@@ -27,37 +39,63 @@ color: #4d4dff;
 }
 
 .correct, .wrong, .correctSelected , .wrongSelected, .white {
-width:180px;
-border : 2px solid #ccc;
-background : #eaeaea;
 padding : 5px;
 margin : 5px;
 -webkit-user-select: none;  
 -moz-user-select: none;    
 -ms-user-select: none;      
 user-select: none;
+width:180px;
 }
 
 .white {
-background : none;
-background-color:none;
+cursor:none;
 cursor:none;
 }
 
 .correct:Hover, .wrong:Hover {
-background-color:#ffa800;
 cursor:none;
 }
 
+
 .correctSelected {
-background-color:#55ff00;
 cursor:none;
 }
 
 .wrongSelected {
-background-color:#f00;
 cursor:none;
 }
 
-.choice {
+.question {
+padding : 5px;
+border-radius:12px;
+width:80%;
+}
+
+.mc1,.mc4{
+display:block;
+margin: 20px auto;
+}
+.mc1{
+margin-bottom: 80px;
+}
+.mc4{
+margin-bottom:100px;
+}
+
+.mc2{
+position:absolute;
+left:120px;
+top:250px;
+}
+
+.mc3{
+position:absolute;
+right:120px;
+top:250px;
+}
+
+.a {
+background-image:url("../BG.gif");
+opacity:0.9;
 }

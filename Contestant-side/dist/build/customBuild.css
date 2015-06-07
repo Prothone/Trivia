@@ -48,7 +48,7 @@ width : 75px;
 height : 75px;
 margin : 2px;
 position : absolute;
-bottom : 35;
+bottom : 120px;
 }
 
 .slider-odd{
@@ -100,6 +100,7 @@ bottom:7px;
 input.s1, input.s2 {
 position:absolute;
 right:195px;
+bottom: 250px;
 }
 
 input.s1 {
@@ -108,4 +109,34 @@ z-index:2;
 
 input.s2 {
 z-index:1;
+}
+
+.question{
+margin-bottom:200px;
+}
+
+.valuemin,.valuemax{
+position : absolute;
+bottom : 245px;
+
+}
+
+.valuemin{
+left:170px;
+}
+
+.valuemax{
+right:160px;
+}
+
+.lockRed{
+position:absolute;
+bottom : 200px;
+left:220px;
+}
+
+.lockBlue{
+position:absolute;
+bottom : 200px;
+right:220px;
 }

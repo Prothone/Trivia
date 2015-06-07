@@ -22,15 +22,29 @@ html
           h3 buzz
       
       section
-        h3 slide
-          form(class='rangeInput')
+        h3(class='question') soal soal soal soal soal soal soal.. ini soal?
+          form(class='rangeInput' id='form1')
+            div(class='valuemin') 0
+            div(class='valuemax') 20
             input(type='range' class='s1 red' name='rangeInputx' min='0' max='20' value='10' oninput='amountx.value=rangeInputx.value')
-            input(type='range' class='s2 blue' name='rangeInputy' min='0' max='20' value='10' oninput='amounty.value=rangeInputy.value')
             div(class='slider slider-odd')
-              output(name='amountx' for='rangeInputx') 10
+              output(id='xx' name='amountx' for='rangeInputx') 10
+            input(type='submit' class='sb lockRed' value='Lock Answer' onClick='inputRed(rangeInputx.value)')
+            div(id='zz') k
+          form(class='rangeInput' id='form2')
+            input(type='range' class='s2 blue' name='rangeInputy' min='0' max='20' value='10' oninput='amounty.value=rangeInputy.value')
             div(class='slider slider-even')
-              output(name='amounty' for='rangeInputy') 10 
-          
+              output(name='amounty' for='rangeInputy') 10
+            input(type='submit' class='sb lockBlue' value='Lock Answer' onClick='inputBlue(rangeInputy.value)') 
+            div(id='zzz') k
+      
+      section
+        h3 jawaban : 12
+        h5 jawaban red (selisih) :
+        div(class='ansred') 
+        h5 jawaban blue (selisih) :
+        div(class='ansblue') 
+      
       section
         h2 Keyboard Interaction
         h3 Powered by <a href="https://github.com/markdalgleish/bespoke-keys">bespoke-keys</a>

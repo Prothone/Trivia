@@ -10,7 +10,7 @@ html
 
   body
     audio(id='buzzer')
-      source(src='buzz.wav' type='audio/wav')
+      source(src='build/buzz.wav' type='audio/wav')
     
     article
 
@@ -19,31 +19,47 @@ html
       
       section
         div(class='buzzpage')
-          h3 buzz
+          h3(class='buzz') buzz!
       
       section
-        h3(class='question') soal soal soal soal soal soal soal.. ini soal?
-          form(class='rangeInput' id='form1')
-            div(class='valuemin') 0
-            div(class='valuemax') 20
-            input(type='range' class='s1 red' name='rangeInputx' min='0' max='20' value='10' oninput='amountx.value=rangeInputx.value')
-            div(class='slider slider-odd')
-              output(id='xx' name='amountx' for='rangeInputx') 10
-            input(type='submit' class='sb lockRed' value='Lock Answer' onClick='inputRed(rangeInputx.value)')
-            div(id='zz') k
-          form(class='rangeInput' id='form2')
-            input(type='range' class='s2 blue' name='rangeInputy' min='0' max='20' value='10' oninput='amounty.value=rangeInputy.value')
-            div(class='slider slider-even')
-              output(name='amounty' for='rangeInputy') 10
-            input(type='submit' class='sb lockBlue' value='Lock Answer' onClick='inputBlue(rangeInputy.value)') 
-            div(id='zzz') k
+        div(class='buzzpage')
+          h3(class='buzz') buzz!
       
       section
-        h3 jawaban : 12
-        h5 jawaban red (selisih) :
-        div(class='ansred') 
-        h5 jawaban blue (selisih) :
-        div(class='ansblue') 
+        div(class='buzzpage')
+          h3(class='buzz') buzz!
+      
+      section
+        h3(class='question') Berapa ketinggian dari Gunung Everest?
+        div(class='valuemin') 4000
+        div(class='valuemax') 10000
+        form
+          input(type='range' class='red' name='rangeInputx' min='4000' max='10000' value='6000' oninput='amountx.value=rangeInputx.value')
+          div(class='slider-odd')
+            output(name='amountx' for='rangeInputx') 6000
+          input(type='submit' class='sb lockRed' value='' onClick='inputRed(rangeInputx.value,8848)')
+          div(class='kosong') 
+          //div(id='zz') k
+        form
+          input(type='range' class='blue' name='rangeInputy' min='4000' max='10000' value='8000' oninput='amounty.value=rangeInputy.value')
+          div(class='slider-even')
+            output(name='amounty' for='rangeInputy') 8000
+          input(type='submit' class='sb lockBlue' value='' onClick='inputBlue(rangeInputy.value,8848)') 
+          //div(id='zzz') k
+      
+      section
+        <img src='build/img/8848.png'>
+        h3 Jawaban <a style="color:red;">Red</a> (Selisih) :
+        h3(class='ansred') 
+        h3 Jawaban <a style="color:blue;">Blue</a> (Selisih) :
+        h3(class='ansblue') 
+        h2 Winner :
+        h2(class='vCloser')
+      
+      section
+        h3 Mount Everest
+        h4 <img src="build/img/everest.jpg" width="400px">
+        h4 Mount Everest, yang juga dikenal sebagai Sagarm&#257;th&#257; di Nepal dan Chomolungma di Tibet, adalah gunung tertinggi di dunia. Gunung ini terletak pada pegunungan Himalaya. Ketinggian puncaknya adalah 8.848 meter (29.029 kaki) di atas permukaan laut.
       
       section
         h2 Keyboard Interaction

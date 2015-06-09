@@ -1,17 +1,29 @@
+@font-face {
+    font-family: ADigital;
+    src: url('DS-DIGIB.ttf');
+}
+
+.titleQ {
+color:white;
+}
+
 .score1, .score2 {
-font-weight:bold;
-font-size:150px;
+background-color:black;
+font-size:120px;
 position:absolute;
 bottom:0;
 border : 2px solid #ccc;
-width:180px;
-text-align:center;
+width:135px;
+height:135px;
+text-align:right;
 cursor:crosshair;
 -webkit-user-select: none;  
 -moz-user-select: none;    
 -ms-user-select: none;      
 user-select: none;
+font-family : ADigital;
 }
+
 h6{
     font-size: 12px;
     text-align: left;
@@ -26,55 +38,91 @@ right:0;
 color: #4d4dff;
 }
 
-.correct, .wrong, .correctSelected , .wrongSelected {
-width:180px;
-border : 2px solid #ccc;
-background : #eaeaea;
+.correct, .wrong, .correctSelected , .wrongSelected, .white {
 padding : 5px;
 margin : 5px;
 -webkit-user-select: none;  
 -moz-user-select: none;    
 -ms-user-select: none;      
 user-select: none;
-}
-
-.correct:Hover, .wrong:Hover {
-background-color:#ffa800;
-cursor:none;
-}
-
-.correctSelected {
-background-color:#55ff00;
-cursor:none;
-}
-
-.wrongSelected {
-background-color:#f00;
-cursor:none;
-}
-
-.correct, .wrong, .correctSelected , .wrongSelected {
 width:180px;
-border : 2px solid #ccc;
-background : #eaeaea;
-padding : 5px;
-margin : 5px;
+background:url("img/ch idle.jpg");
+background-size:180px 32px;
+border-radius : 18px;
+}
+
+.white {
+cursor:none;
+background:url("img/ch idle.jpg");
+background-size:180px 32px;
 }
 
 .correct:Hover, .wrong:Hover {
-background-color:#ffa800;
 cursor:none;
+background:url("img/ch choose.jpg");
+background-size:180px 32px;
 }
 
+
 .correctSelected {
-background-color:#55ff00;
 cursor:none;
+background:url("img/ch right.jpg");
+background-size:180px 32px;
 }
 
 .wrongSelected {
-background-color:#f00;
 cursor:none;
+background:url("img/ch wrong.jpg");
+background-size:180px 32px;
+}
+
+.question {
+padding : 5px;
+border-radius:12px;
+width:80%;
+background:url("img/QBG.jpg");
+background-size:448px 90px;
+-webkit-user-select: none;  
+-moz-user-select: none;    
+-ms-user-select: none;      
+user-select: none;
+color:white;
+font-weight:bold;
+}
+
+.mc1,.mc4{
+display:block;
+margin: 20px auto;
+}
+.mc1{
+margin-bottom: 80px;
+}
+.mc4{
+margin-bottom:100px;
+}
+
+.mc2{
+position:absolute;
+left:120px;
+top:250px;
+}
+
+.mc3{
+position:absolute;
+right:120px;
+top:250px;
+}
+
+.a {
+background-image:url("img/BG.gif");
+opacity:0.9;
 }
 
 .choice {
+color:white;
+text-shadow:
+   -1px -1px 0 #999,  
+    1px -1px 0 #999,
+    -1px 1px 0 #999,
+     1px 1px 0 #999;
 }

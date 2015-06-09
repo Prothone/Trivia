@@ -11,13 +11,13 @@ html
   body
     
     audio(id='audioCorrect')
-      source(src='music/correct.ogg' type='audio/ogg')
+      source(src='build/music/correct.ogg' type='audio/ogg')
     audio(id='audioWrong')
-      source(src='music/wrong.ogg' type='audio/ogg')
+      source(src='build/music/wrong.ogg' type='audio/ogg')
     audio(id='audioLock')
-      source(src='music/lock.ogg' type='audio/ogg')
+      source(src='build/music/lock.ogg' type='audio/ogg')
     audio(id='rules')
-      source(src='music/rules.ogg' type='audio/ogg')
+      source(src='build/music/rules.ogg' type='audio/ogg')
     
     article
       section
@@ -72,27 +72,45 @@ html
             li
                 h6 Jika terjadi hal dimana kedua tim menjawab dengan jawaban persis yang benar, maka kedua tim tersebut sama-sama akan mendapatkan nilai.
       
-      section
-        h3 Soal 3
-          ul
+      section(class='a')
+        h2(class='titleQ') Soal 3
+        ul(class='question')
           li.h3
           li Bagaimanakah cara Penguasa otoriter paling
           li terkenal di dunia, Adolf Hitler, meninggal?
         ul(class='choice')
-          li(class='correct' onClick='SelectedC()' onmouseover='lock()') A. Bunuh diri
-          li(class='wrong' onClick='SelectedW(0)' onmouseover='lock()') B. Lupa bernafas
-          li(class='wrong' onClick='SelectedW(1)' onmouseover='lock()') C. Menelan batu
-          li(class='wrong' onClick='SelectedW(2)' onmouseover='lock()') D. Bosan
+          li(class='mc1 correct' onClick='SelectedC()' onmouseover='lock()') A. Bunuh diri
+          li(class='mc2 wrong' onClick='SelectedW(0)' onmouseover='lock()') B. Lupa bernafas
+          li(class='mc3 wrong' onClick='SelectedW(1)' onmouseover='lock()') C. Menelan batu
+          li(class='mc4 wrong' onClick='SelectedW(2)' onmouseover='lock()') D. Bosan
+          
         div(class='score1' onClick='incrementValue1()') 
         div(class='score2' onClick='incrementValue2()') 
       
-      section
+      section(class='a')
+        h2(class='titleQ') Soal 4
+        ul(class='question')
+          li.h3
+          li Apakah hobi karakter “Sandy Cheeks” 
+          li dalam seri “Spongebob Squarepants”?
+        ul(class='choice')
+          li(class='mc1 correct' onClick='SelectedC()' onmouseover='lock()') A. Bermain Basket
+          li(class='mc2 wrong' onClick='SelectedW(0)' onmouseover='lock()') B. Karate
+          li(class='mc3 wrong' onClick='SelectedW(1)' onmouseover='lock()') C. Makan Krabby Patty
+          li(class='mc4 wrong' onClick='SelectedW(2)' onmouseover='lock()') D. Tidur
+          
+        div(class='score1' onClick='incrementValue1()') 
+        div(class='score2' onClick='incrementValue2()')
+      
+      section(class='a')
         h2 Bullet List
         h3.bullet Powered by <a href="https://github.com/markdalgleish/bespoke-bullets">bespoke-bullets</a>
         ul
           li Bullet 1
           li Bullet 2
           li Bullet 3
+        div(class='score1' onClick='incrementValue1()') 
+        div(class='score2' onClick='incrementValue2()') 
 
       section
         h2 Syntax Highlighting

@@ -1,26 +1,13 @@
-.score1, .score2 {
+.buzz{
 font-weight:bold;
-font-size:150px;
-position:absolute;
-bottom:0;
-border : 2px solid #ccc;
-width:180px;
-text-align:center;
-cursor:crosshair;
--webkit-user-select: none;  
--moz-user-select: none;    
--ms-user-select: none;      
-user-select: none;
+font-size : 200px;
+color : #000;
 }
 
-.score1 {
-left:0;
-color: #ff4545;
-}
-
-.score2 {
-right:0;
-color: #4d4dff;
+.buzzPressed{
+font-weight:bold;
+font-size : 200px;
+color : #fff;
 }
 
 .buzzpage,.buzzpagered,.buzzpageblue {
@@ -42,26 +29,29 @@ background-color:#00f;
 font-size : 150px;
 }
 
-.slider {
-font-size : 50px;
-width : 75px;
+.slider-odd, .slider-even {
+font-size : 60px;
+width : 180px;
 height : 75px;
 margin : 2px;
 position : absolute;
-bottom : 35;
+bottom : 120px;
+border : 2px solid #000;
+text-align : center;
 }
 
 .slider-odd{
-border : 2px solid #000;
 color : red;
-left : 220px;
+left : 115px;
 }
 
 .slider-even{
-border : 2px solid #000;
 color : blue;
-right : 220px;
+right : 115px;
 }
+
+
+
 
 input[type=range]::-moz-range-thumb {
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
@@ -77,14 +67,6 @@ input[type=range]{
 width : 250px;
 }
 
-
-
-
-
-
-
-
-
 input.red::-moz-range-thumb {
 background : red;
 }
@@ -93,19 +75,101 @@ input.blue::-moz-range-thumb {
 background : blue;
 }
 
-input.rangeInput {
-bottom:7px;
-}
 
-input.s1, input.s2 {
+
+input.red, input.blue {
 position:absolute;
 right:195px;
+bottom: 250px;
 }
 
-input.s1 {
+input.red {
 z-index:2;
 }
 
-input.s2 {
+input.blue {
 z-index:1;
+}
+
+input.green{
+position:absolute;
+right:195px;
+bottom: 250px;
+z-index:3;
+}
+
+input.green::-moz-range-thumb {
+background : #0f0;
+}
+
+.question{
+margin-bottom:200px;
+}
+
+.valuemin,.valuemax{
+position : absolute;
+bottom : 248px;
+
+}
+
+.valuemin{
+left:140px;
+text-align :right;
+}
+
+.valuemax{
+right:140px;
+text-align:left;
+}
+
+.lockRed, .lockedRed{
+position:absolute;
+bottom : 200px;
+left:167.5px;
+}
+
+.lockBlue, .lockedBlue{
+position:absolute;
+bottom : 200px;
+right:167.5px;
+}
+
+input[type="submit"].lockRed{
+border: 0;
+background: url("img/lockRed.png");
+background-size:82px 18px;
+width:82px;
+height:18px;
+}
+
+input[type="submit"].lockBlue{
+border: 0;
+background: url("img/lockBlue.png");
+background-size:82px 18px;
+width:82px;
+height:18px;
+}
+
+input[type="submit"].lockRed:Hover, input[type="submit"].lockBlue:Hover{
+border: 0;
+background: url("img/lockover.png");
+background-size:82px 18px;
+width:82px;
+height:18px;
+}
+
+input[type="submit"].lockedRed{
+border: 0;
+background: url("img/locked.png");
+background-size:82px 18px;
+width:82px;
+height:18px;
+}
+
+input[type="submit"].lockedBlue{
+border: 0;
+background: url("img/locked.png");
+background-size:82px 18px;
+width:82px;
+height:18px;
 }

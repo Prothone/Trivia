@@ -22,30 +22,20 @@ html
           h3(class='buzz') buzz!
       
       section
-        div(class='buzzpage')
-          h3(class='buzz') buzz!
-      
-      section
-        div(class='buzzpage')
-          h3(class='buzz') buzz!
-      
-      section
         h3(class='question') Berapa ketinggian dari Gunung Everest?
         div(class='valuemin') 4000
         div(class='valuemax') 10000
         form
-          input(type='range' class='red' name='rangeInputx' min='4000' max='10000' value='6000' oninput='amountx.value=rangeInputx.value')
+          input(type='range' class='red' name='InputRed1' min='4000' max='10000' value='6000' oninput='showRed1.value=InputRed1.value')
           div(class='slider-odd')
-            output(name='amountx' for='rangeInputx') 6000
-          input(type='submit' class='sb lockRed' value='' onClick='inputRed(rangeInputx.value,8848)')
+            output(name='showRed1' for='InputRed1') 6000
+          input(type='submit' class='lockRed' value='' onClick='inputRed(InputRed1.value,8848)')
           div(class='kosong') 
-          //div(id='zz') k
         form
-          input(type='range' class='blue' name='rangeInputy' min='4000' max='10000' value='8000' oninput='amounty.value=rangeInputy.value')
+          input(type='range' class='blue' name='InputBlue1' min='4000' max='10000' value='8000' oninput='showBlue1.value=InputBlue1.value')
           div(class='slider-even')
-            output(name='amounty' for='rangeInputy') 8000
-          input(type='submit' class='sb lockBlue' value='' onClick='inputBlue(rangeInputy.value,8848)') 
-          //div(id='zzz') k
+            output(name='showBlue1' for='InputBlue1') 8000
+          input(type='submit' class='lockBlue' value='' onClick='inputBlue(InputBlue1.value,8848)') 
       
       section
         <img src='build/img/8848.png'>
@@ -61,6 +51,56 @@ html
         h4 <img src="build/img/everest.jpg" width="400px">
         h4 Mount Everest, yang juga dikenal sebagai Sagarm&#257;th&#257; di Nepal dan Chomolungma di Tibet, adalah gunung tertinggi di dunia. Gunung ini terletak pada pegunungan Himalaya. Ketinggian puncaknya adalah 8.848 meter (29.029 kaki) di atas permukaan laut.
       
+      section
+        h3(class='question') Berapa jumlah pemain ice hockey?
+        div(class='valuemin') 1
+        div(class='valuemax') 30
+        form
+          input(type='range' class='red' name='InputRed2' min='1' max='30' value='10' oninput='showRed2.value=InputRed2.value')
+          div(class='slider-odd')
+            output(name='showRed2' for='InputRed2') 10
+          input(type='submit' class='sb lockRed' value='' onClick='inputRed(InputRed2.value,6)')
+          div(class='kosong') 
+        form
+          input(type='range' class='blue' name='InputBlue2' min='1' max='30' value='20' oninput='showBlue2.value=InputBlue2.value')
+          div(class='slider-even')
+            output(name='showBlue2' for='InputBlue2') 20
+          input(type='submit' class='sb lockBlue' value='' onClick='inputBlue(InputBlue2.value,6)') 
+      
+      section
+        <img src='build/img/8848.png'>
+        h3 Jawaban <a style="color:red;">Red</a> (Selisih) :
+        h3(class='ansred') 
+        h3 Jawaban <a style="color:blue;">Blue</a> (Selisih) :
+        h3(class='ansblue') 
+        h2 Winner :
+        h2(class='vCloser')
+      
+      section
+        h3(class='question') Pada tahun berapakah film ÅgThe AvengersÅh rilis untuk pertama kalinya?
+        div(class='valuemin') 1990
+        div(class='valuemax') 2020
+        form
+          input(type='range' class='red' name='InputRed3' min='1990' max='2020' value='2000' oninput='showRed3.value=InputRed3.value')
+          div(class='slider-odd')
+            output(name='showRed3' for='InputRed3') 2000
+          input(type='submit' class='sb lockRed' value='' onClick='inputRed(InputRed3.value,2009)')
+          div(class='kosong') 
+        form
+          input(type='range' class='blue' name='InputBlue3' min='1990' max='2020' value='2010' oninput='showBlue3.value=InputBlue3.value')
+          div(class='slider-even')
+            output(name='showBlue3' for='InputBlue3') 2010
+          input(type='submit' class='sb lockBlue' value='' onClick='inputBlue(InputBlue3.value,2009)') 
+      
+      section
+        <img src='build/img/8848.png'>
+        h3 Jawaban <a style="color:red;">Red</a> (Selisih) :
+        h3(class='ansred') 
+        h3 Jawaban <a style="color:blue;">Blue</a> (Selisih) :
+        h3(class='ansblue') 
+        h2 Winner :
+        h2(class='vCloser')
+            
       section
         h2 Keyboard Interaction
         h3 Powered by <a href="https://github.com/markdalgleish/bespoke-keys">bespoke-keys</a>

@@ -1,13 +1,15 @@
 .buzz{
 font-weight:bold;
-font-size : 200px;
+font-size : 30px;
 color : #000;
+padding-top:100px;
 }
 
 .buzzPressed{
 font-weight:bold;
-font-size : 200px;
+font-size : 30px;
 color : #fff;
+padding-top:100px;
 }
 
 .buzzpage,.buzzpagered,.buzzpageblue {

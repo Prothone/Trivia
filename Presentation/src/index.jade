@@ -17,17 +17,31 @@ html
     audio(id='audioLock')
       source(src='build/music/lock.ogg' type='audio/ogg')
     audio(id='rules')
-      source(src='build/music/rules.ogg' type='audio/ogg')
+      source(src='build/music/Rules explanation.ogg' type='audio/ogg')
     audio(id='badumtss')
-      source(src='music/Ba Dum Tss.ogg' type='audio/ogg')
-    audio(id='champion')
-      source(src='music/We Are The Champion.ogg' type='audio/ogg')
-    audio(id='nextQ')
-      source(src='music/next_Q.ogg' type='audio/ogg')
+      source(src='build/music/Ba Dum Tss.ogg' type='audio/ogg')
     audio(id='drumRoll')
-      source(src='music/Drum Roll.ogg' type='audio/ogg')
+      source(src='build/music/Drum Roll.ogg' type='audio/ogg')
     audio(id='drumRollF')
-      source(src='music/Drum Roll Final.ogg' type='audio/ogg')
+      source(src='build/music/Drum Roll Final.ogg' type='audio/ogg')
+    audio(id='score')
+      source(src='build/music/Add Score.ogg' type='audio/ogg')
+    audio(id='clap')
+      source(src='build/music/Clap.ogg' type='audio/ogg')
+    audio(id='expl')
+      source(src='build/music/Explanation.ogg' type='audio/ogg')
+    audio(id='nextQ')
+      source(src='build/music/Next Question.ogg' type='audio/ogg')
+    audio(id='QM')
+      source(src='build/music/QM Intro.ogg' type='audio/ogg')
+    audio(id='ans')
+      source(src='build/music/Question Asked.ogg' type='audio/ogg')
+    audio(id='ask')
+      source(src='build/music/Question.ogg' type='audio/ogg')
+    audio(id='swap')
+      source(src='build/music/Swap.ogg' type='audio/ogg')
+    audio(id='end')
+      source(src='build/music/Ending.ogg' type='audio/ogg')
     
     article
       section
@@ -69,6 +83,7 @@ html
         h2(class='titleQ') Soal 1
         ul(class='question')
           li.h3
+          li(class='qImgContainer')<img src="build/img/Question/three-musketeers.jpg" height="200px">
           li Ketiga musketir dalam Novel &quot;The Three
           li Musketeers&quot; adalah Arthos, Porthos dan Aramis.
         ul(class='choice')
@@ -90,6 +105,7 @@ html
         h2(class='titleQ') Soal 2
         ul(class='question')
           li.h3
+          li(class='qImgContainer')<img src="build/img/Question/everest.jpg" height="200px">
           li Berapa meter ketinggian dari gunung 
           li tertinggi di dunia, Gunung Everest?
         div(class='block')
@@ -108,9 +124,9 @@ html
         h2(class='titleQ') Soal 3
         ul(class='question')
           li.h3
+          li(class='qImgContainer')<img src="build/img/Question/adolf-hitler.jpg" height="200px">
           li Adolf Hitler meninggal dunia akibat dibunuh
           li jenderalnya sendiri, Erwin Rommel.
-          li <img src="build/img/Image Quiz/adolf-hitler.jpg" width="300px" style="position:absolute;right:10px;bottom:200px;">
         ul(class='choice')
           li(class='tf1 wrong' onClick='SelectedW(1)' onmouseover='lock()') True
           li(class='tf2 correct' onClick='SelectedC()' onmouseover='lock()') False
@@ -130,11 +146,12 @@ html
         h2(class='titleQ') Soal 4
         ul(class='question')
           li.h3
+          li(class='qImgContainer')<img src="build/img/Question/mikroskil.jpg" height="100px">
           li Di mana ruangan kelas
           li TI-A Sore Semester IV ?
         ul(class='choice')
-          li(class='mc1 wrong' onClick='SelectedW()' onmouseover='lock()') A. L1/T2
-          li(class='mc2 correct' onClick='SelectedC(2)' onmouseover='lock()') B. T2/L2
+          li(class='mc1 wrong' onClick='SelectedW(2)' onmouseover='lock()') A. L1/T2
+          li(class='mc2 correct' onClick='SelectedC()' onmouseover='lock()') B. T2/L2
           li(class='mc3 wrong' onClick='SelectedW(3)' onmouseover='lock()') C. T1/L2
           li(class='mc4 wrong' onClick='SelectedW(4)' onmouseover='lock()') D. T2/L1
         div(class='score1' onClick='incrementValue1()') 
@@ -152,13 +169,14 @@ html
         h2(class='titleQ') Soal 5
         ul(class='question')
           li.h3
+          li(class='qImgContainer')<img src="build/img/Question/energy.jpg" height="100px">
           li Berapa kalori yang sama
           li dengan 1 joule?
         ul(class='choice')
-          li(class='mc1 correct' onClick='SelectedC()' onmouseover='lock()') A. 2,4 kal
-          li(class='mc2 wrong' onClick='SelectedW(0)' onmouseover='lock()') B. 0,24 kal
-          li(class='mc3 wrong' onClick='SelectedW(1)' onmouseover='lock()') C. 0,42 kal
-          li(class='mc4 wrong' onClick='SelectedW(2)' onmouseover='lock()') D. 0,72 kal
+          li(class='mc1 wrong' onClick='SelectedW(5)' onmouseover='lock()') A. 2,4 kal
+          li(class='mc2 correct' onClick='SelectedC()' onmouseover='lock()') B. 0,24 kal
+          li(class='mc3 wrong' onClick='SelectedW(6)' onmouseover='lock()') C. 0,42 kal
+          li(class='mc4 wrong' onClick='SelectedW(7)' onmouseover='lock()') D. 0,72 kal
         div(class='score1' onClick='incrementValue1()') 
         div(class='score2' onClick='incrementValue2()')
       
@@ -175,13 +193,14 @@ html
         h2(class='titleQ') Soal 6
         ul(class='question')
           li.h3
+          li(class='qImgContainer')<img src="build/img/Question/sandy.png" height="100px">
           li Apakah hobi karakter &quot;Sandy Cheeks&quot;
           li dalam seri &quot;Spongebob Squarepants&quot;
         ul(class='choice')
-          li(class='mc1 correct' onClick='SelectedW(3)' onmouseover='lock()') A. Mengeong
-          li(class='mc2 wrong' onClick='SelectedW(4)' onmouseover='lock()' style='width:200px;background-size:200px 32px;') B. Nonton Spongebob
-          li(class='mc3 wrong' onClick='SelectedW(5)' onmouseover='lock()') C. Meditasi
-          li(class='mc4 wrong' onClick='SelectedC()' onmouseover='lock()') D. Karate
+          li(class='mc1 wrong' onClick='SelectedW(8)' onmouseover='lock()') A. Mengeong
+          li(class='mc2 wrong' onClick='SelectedW(9)' onmouseover='lock()' style='width:200px;background-size:200px 32px;') B. Nonton Spongebob
+          li(class='mc3 wrong' onClick='SelectedW(10)' onmouseover='lock()') C. Meditasi
+          li(class='mc4 correct' onClick='SelectedC()' onmouseover='lock()') D. Karate
         div(class='score1' onClick='incrementValue1()') 
         div(class='score2' onClick='incrementValue2()')
       
@@ -197,10 +216,11 @@ html
         h2(class='titleQ') Soal 7
         ul(class='question')
           li.h3
+          li(class='qImgContainer')<img src="build/img/Question/electricity.jpg" height="200px">
           li James Watt adalah penemu 
           li &quot;Listrik&quot; pertama di dunia.
         ul(class='choice') 
-          li(class='tf1 wrong' onClick='SelectedW(6)' onmouseover='lock()') True
+          li(class='tf1 wrong' onClick='SelectedW(11)' onmouseover='lock()') True
           li(class='tf2 correct' onClick='SelectedC()' onmouseover='lock()') False
         div(class='block')
         div(class='score1' onClick='incrementValue1()') 
@@ -218,6 +238,7 @@ html
         h2(class='titleQ') Soal 8
         ul(class='question')
           li.h3
+          li(class='qImgContainer')<img src="build/img/Question/ice-hockey.jpg" height="200px">
           li Berapakah jumlah pemain dalam 
           li permainan Ice Hockey ?
         div(class='block')
@@ -236,13 +257,14 @@ html
         h2(class='titleQ') Soal 9
         ul(class='question')
           li.h3
+          li(class='qImgContainer')<img src="build/img/Question/C.png" height="100px">
           li Manakah di bawah ini
           li yang mengandung C ?
         ul(class='choice')
           li(class='mc1 correct' onClick='SelectedC()' onmouseover='lock()') A. Jeruk
-          li(class='mc2 wrong' onClick='SelectedW(0)' onmouseover='lock()') B. Merica
-          li(class='mc3 wrong' onClick='SelectedW(1)' onmouseover='lock()') C. Besi
-          li(class='mc4 wrong' onClick='SelectedW(2)' onmouseover='lock()') D. C++
+          li(class='mc2 wrong' onClick='SelectedW(12)' onmouseover='lock()') B. meriCa
+          li(class='mc3 wrong' onClick='SelectedW(13)' onmouseover='lock()') C. Besi
+          li(class='mc4 wrong' onClick='SelectedW(14)' onmouseover='lock()') D. C++
         div(class='score1' onClick='incrementValue1()') 
         div(class='score2' onClick='incrementValue2()')
        
@@ -251,6 +273,7 @@ html
         ul(class='expl')
           li.h3
           li Karena jeruk kan emang kaya akan Vitamin C.
+          li <img src="build/img/Orange.png" width="130px">
         div(class='score1' onClick='incrementValue1()') 
         div(class='score2' onClick='incrementValue2()')
       
@@ -258,6 +281,7 @@ html
         h2(class='titleQ') Soal 10
         ul(class='question')
           li.h3
+          li(class='qImgContainer')<img src="build/img/Question/wall-e.jpg" height="200px">
           li Pada tahun berapa film hasil kolaborasi
           li Disney dan Pixar, <i>Wall-E</i>, dirilis?
         div(class='block')

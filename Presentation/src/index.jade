@@ -38,49 +38,32 @@ html
       
       section
         h2.bullet Created by : 
-        hr
         ul
-        
-            li - Kevin [13.111.0437] 
-            li - Rudy Setia [13.111.0534]
-            li - Jeffrey Ngadio [13.111.1017]
-            li - Eka Pratama Wijaya [13.111.0917]
+            li Kevin [13.111.0437] 
+            li Rudy Setia [13.111.0534]
+            li Eka Pratama Wijaya [13.111.0917]
+            li Jeffrey Ngadio [13.111.1017]
 
       section
         h2.bullet Quiz Master :
-        hr
         ul
-            li - Kevin [13.111.0437]
+            li Kevin [13.111.0437]
             
       section
         h2.bullet Apa itu Trivia Quiz?  
-        hr
         ul
-            li 
-                h6 Trivia Quiz adalah konten dalam bentuk Quiz(tebak-tebakan) dimana ada 1 atau beberapa pertanyaan yang harus dijawab, bisa saja menggunakan beberapa macam metode jawaban misalnya metode pilihan ganda, metode essay, dan masih banyak lagi...
-
+            li.h6 Trivia Quiz adalah sebuah quiz trivial.
+            li <img src="build/img/say.png" width="200px">
+            li(style='font-size:24px;font-weight:bold;') Trivia Quiz adalah sebuah quiz berisi pertanyaan-pertanyaan trivial yang umumnya dianggap remeh oleh kebanyakan orang.
+      
       section
         h2.bullet Rules
-        hr
         ul
-            li
-                h6 <strong>Pada Quiz kali ini terdapat</strong> : 10 soal dimana jenis-jenis pertanyaan akan berupa Pilihan Ganda, Value Estimation, dan True/False Question.
-            li
-                h6 Setiap pertanyaan akan diberi waktu berpikir maksimal 15 detik dan jika tidak menjawab dalam waktu 15 detik maka pertanyaan tersebut secara otomatis akan dioper ke tim selanjutnya.
-            li
-                h6 Setiap pertanyaan yang benar akan diberikan bobot nilai.
-            li
-                h6 Setiap sebuah pertanyaan selesai dibaca, para peserta wajib menekan tombol yang sudah disediakan, bagi yang duluan menekan tombol tersebut diperbolehkan untuk menjawab pertanyaan, ataupun boleh juga dioper kepada tim lawan, jika tim lawan salah menjawab, maka tim pertama akan mendapatkan poin tambahan dan jika tim kedua diperbolehkan untuk mengoper kembali pertanyaan yang dioper oleh tim pertama dan jika tim pertama tidak menjawab/salah menjawab, maka tim kedua akan mendapatkan nilai...(Jika tim yang dioper pertanyaanna oleh tim lawan dan mereka berhasil menjawab dengan benar, maka tim tersebut akan mendapatkan poin tambahan).
-                
-
-      section
-        h2.bullet Rules (Cont..)
-        hr
-        ul
-            li
-                h6 Pada Quiz bagian Value Estimation, pada setiap pertanyaan yang ada akan diberikan jawaban berupa range yang tersedia (Misalnya <0..10>), pada quiz bagian ini tidak diberlakukan sistem menekan tombol, setiap tim berhak memberikan jawaban yang ada, jika salah satu tim menjawab dengan nilai benar/mendekati, maka dialah yang mendapatkan poin.
-            li
-                h6 Jika terjadi hal dimana kedua tim menjawab dengan jawaban persis yang benar, maka kedua tim tersebut sama-sama akan mendapatkan nilai.
+          li.h6 Pada Quiz ini terdapat 3 jenis soal, yaitu :
+          li.h6 Multiple Choice
+          li.h6 Value Estimation
+          li.h6 True/False
+          li.h6 Untuk setiap soal benar akan diberi nilai 5.
       
       section(class='a')
         h2(class='titleQ') Soal 1
@@ -89,11 +72,19 @@ html
           li Ketiga musketir dalam Novel &quot;The Three
           li Musketeers&quot; adalah Arthos, Porthos dan Aramis.
         ul(class='choice')
-          li(class='block') 
           li(class='tf1 correct' onClick='SelectedC()' onmouseover='lock()') True
           li(class='tf2 wrong' onClick='SelectedW(0)' onmouseover='lock()') False
+        div(class='block') 
         div(class='score1' onClick='incrementValue1()') 
         div(class='score2' onClick='incrementValue2()') 
+      
+      section(class='a')
+        h2(class='titleQ') Penjelasan Soal 1
+        ul(class='expl')
+          li.h3
+          li(style='font-size:17px;') The Three Musketeers merupakan sebuah Novel karya Alexandre Dumas. Arthos, Porthos dan Aramis merupakan ketiga musketir yang dimaksud judul tersebut. Novel ini terkenal dengan quote &quot;All for one, one for all&quot;.
+        div(class='score1' onClick='incrementValue1()') 
+        div(class='score2' onClick='incrementValue2()')
       
       section(class='a')
         h2(class='titleQ') Soal 2
@@ -119,6 +110,7 @@ html
           li.h3
           li Adolf Hitler meninggal dunia akibat dibunuh
           li jenderalnya sendiri, Erwin Rommel.
+          li <img src="build/img/Image Quiz/adolf-hitler.jpg" width="300px" style="position:absolute;right:10px;bottom:200px;">
         ul(class='choice')
           li(class='tf1 wrong' onClick='SelectedW(1)' onmouseover='lock()') True
           li(class='tf2 correct' onClick='SelectedC()' onmouseover='lock()') False
@@ -152,7 +144,7 @@ html
         h2(class='titleQ') Penjelasan Soal 4
         ul(class='expl')
           li.h3
-          li Kehendak Tuhan.
+          li(style="font-size:60px;") Kehendak Tuhan !
         div(class='score1' onClick='incrementValue1()') 
         div(class='score2' onClick='incrementValue2()')
 
@@ -163,10 +155,19 @@ html
           li Berapa kalori yang sama
           li dengan 1 joule?
         ul(class='choice')
-          li(class='mc1 correct' onClick='SelectedC()' onmouseover='lock()') A. 0,24 kal
-          li(class='mc2 wrong' onClick='SelectedW(0)' onmouseover='lock()') B. 2,4 kal
+          li(class='mc1 correct' onClick='SelectedC()' onmouseover='lock()') A. 2,4 kal
+          li(class='mc2 wrong' onClick='SelectedW(0)' onmouseover='lock()') B. 0,24 kal
           li(class='mc3 wrong' onClick='SelectedW(1)' onmouseover='lock()') C. 0,42 kal
           li(class='mc4 wrong' onClick='SelectedW(2)' onmouseover='lock()') D. 0,72 kal
+        div(class='score1' onClick='incrementValue1()') 
+        div(class='score2' onClick='incrementValue2()')
+      
+      section(class='a')
+        h2(class='titleQ') Penjelasan Soal 5
+        ul(class='expl')
+          li.h3
+          li <img src="build/img/Calorie.png" width="350px">
+          li Mbah Google telah bersabda!
         div(class='score1' onClick='incrementValue1()') 
         div(class='score2' onClick='incrementValue2()')
 
@@ -185,7 +186,7 @@ html
         div(class='score2' onClick='incrementValue2()')
       
       section(class='a')
-        h2(class='titleQ') Penjelasan Soal 2
+        h2(class='titleQ') Penjelasan Soal 6
         ul(class='expl')
           li.h3
           li Sandra &quot;Sandy&quot; Cheeks, lebih sering disapa Sandy Cheeks sangat menyukai Karate serta beberapa kegiatan Extreme lainnya.
@@ -196,7 +197,7 @@ html
         h2(class='titleQ') Soal 7
         ul(class='question')
           li.h3
-          li 7.	James Watt adalah penemu 
+          li James Watt adalah penemu 
           li &quot;Listrik&quot; pertama di dunia.
         ul(class='choice') 
           li(class='tf1 wrong' onClick='SelectedW(6)' onmouseover='lock()') True
@@ -209,7 +210,7 @@ html
         h2(class='titleQ') Penjelasan Soal 7
         ul(class='expl')
           li.h3
-          li Listrik pertama kali ditemukan oleh <strong>Michael Faraday</strong> yang dijuluki juga sebagai &quot;Bapak Listrik&quot;.
+          li Listrik pertama kali ditemukan oleh <strong>Michael Faraday</strong> yang kemudian dijuluki juga sebagai &quot;Bapak Listrik&quot;.
         div(class='score1' onClick='incrementValue1()') 
         div(class='score2' onClick='incrementValue2()')
       
@@ -249,7 +250,7 @@ html
         h2(class='titleQ') Penjelasan Soal 9
         ul(class='expl')
           li.h3
-          li Karena jeruk emang kaya akan Vitamin C.
+          li Karena jeruk kan emang kaya akan Vitamin C.
         div(class='score1' onClick='incrementValue1()') 
         div(class='score2' onClick='incrementValue2()')
       
@@ -262,50 +263,18 @@ html
         div(class='block')
         div(class='score1' onClick='incrementValue1()') 
         div(class='score2' onClick='incrementValue2()')
-
+        
       section(class='a')
-        h2 Bullet List
-        h3.bullet Powered by <a href="https://github.com/markdalgleish/bespoke-bullets">bespoke-bullets</a>
-        ul
-          li Bullet 1
-          li Bullet 2
-          li Bullet 3
+        h2(class='titleQ') Penjelasan Soal 10
+        ul(class='expl')
+          li.h3
+          li WALL-E, film animasi komedi Sci-Fi yang diproduksi oleh Pixar Animation Studio dan dirilis oleh Walt Disney Pictures pada tahun 2008.
         div(class='score1' onClick='incrementValue1()') 
-        div(class='score2' onClick='incrementValue2()') 
-
-      section
-        h2 Syntax Highlighting
-        h3 Powered by <a href="http://twitter.com/LeaVerou">Lea Verou</a>'s <a href="https://github.com/LeaVerou/prism">Prism</a>
-        pre
-          code.language-javascript.
-            bespoke.from('article', [
-              classes(),
-              keys(),
-              touch(),
-              bullets('li, .bullet')
-            ]);
-
-      section(data-bespoke-hash='named-route')
-        h2 Named Route
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a>
-        p Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.
-
-      section.em phatic-text(data-bespoke-backdrop='emphatic')
-        h2 Emphatic Slide!
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-backdrop">bespoke-backdrop</a>
-
-      section
-        h2.bullet Just the beginning...
-        br
-        ul
-          li Edit <a href="http://jade-lang.com/">Jade</a> markup in <em>'src/index.jade'</em>
-          li Edit <a href="http://learnboost.github.io/stylus/">Stylus</a> styles in <em>'src/styles/main.styl'</em>
-          li Edit JavaScript in <em>'src/scripts/main.js'</em>
-        br
-        ul
-          li
-            strong Enjoy! :)
-            a(href='http://twitter.com/markdalgleish')  -@markdalgleish
+        div(class='score2' onClick='incrementValue2()')
+        
+      section(class='a')
+        h2(class='titleQ') Mikroskil Absolute Champion of Exclusive Trivial Quiz (MACET) 2015
+        <img src="build/img/trophy.png" width="200px">
 
     script(src='build/build.js')
     script(src='build/customBuild.js')

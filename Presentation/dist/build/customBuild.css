@@ -3,6 +3,11 @@
     src: url('DS-DIGIB.ttf');
 }
 
+@font-face{
+font-family:chalk;
+src:url('SqueakyChalkSound.ttf');
+}
+
 .titleQ {
 color:white;
 }
@@ -113,18 +118,22 @@ right:120px;
 top:250px;
 }
 
+.block{
+margin-bottom:220px;
+}
+
 .tf1{
 display : block;
 position:absolute;
-left:120px;
-top:250px;
-margin-bottom:100px;
+left:105px;
+top:210px;
 }
 
 .tf2{
+display : block;
 position:absolute;
-right:120px;
-top:250px;
+right:105px;
+top:210px;
 }
 
 .a {
@@ -139,4 +148,17 @@ text-shadow:
     1px -1px 0 #999,
     -1px 1px 0 #999,
      1px 1px 0 #999;
+}
+
+.expl {
+width:500px;
+height:300px;
+background:url('img/Chalkboard.png');
+background-size: 500px 300px;
+padding-top: 20px;
+padding-right: 50px;
+padding-left:50px;
+font-size:20px;
+font-family:chalk;
+color:white;
 }

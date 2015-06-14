@@ -37,7 +37,7 @@ html
         h1 Trivia Quiz  
       
       section
-        h2.bullet Create by : 
+        h2.bullet Created by : 
         hr
         ul
         
@@ -47,7 +47,7 @@ html
             li - Eka Pratama Wijaya [13.111.0917]
 
       section
-        h2.bullet MC :
+        h2.bullet Quiz Master :
         hr
         ul
             li - Kevin [13.111.0437]
@@ -89,6 +89,7 @@ html
           li Ketiga musketir dalam Novel &quot;The Three
           li Musketeers&quot; adalah Arthos, Porthos dan Aramis.
         ul(class='choice')
+          li(class='block') 
           li(class='tf1 correct' onClick='SelectedC()' onmouseover='lock()') True
           li(class='tf2 wrong' onClick='SelectedW(0)' onmouseover='lock()') False
         div(class='score1' onClick='incrementValue1()') 
@@ -100,14 +101,15 @@ html
           li.h3
           li Berapa meter ketinggian dari gunung 
           li tertinggi di dunia, Gunung Everest?
+        div(class='block')
         div(class='score1' onClick='incrementValue1()') 
         div(class='score2' onClick='incrementValue2()')
       
       section(class='a')
         h2(class='titleQ') Penjelasan Soal 2
-        ul(class='question')
+        ul(class='expl')
           li.h3
-          li Tinggi Eksak pada gunung Everest adalah &quot;<strong>8.850 m</strong>&quot;
+          li Gunung Everest, juga dikenal sebagai Sagarmatha di Nepal dan Chomolungma di Tibet, merupakan gunung tertinggi di dunia dengan tinggi 8.850 m di atas permukaan laut.
         div(class='score1' onClick='incrementValue1()') 
         div(class='score2' onClick='incrementValue2()')
       
@@ -120,16 +122,15 @@ html
         ul(class='choice')
           li(class='tf1 wrong' onClick='SelectedW(1)' onmouseover='lock()') True
           li(class='tf2 correct' onClick='SelectedC()' onmouseover='lock()') False
+        div(class='block')
         div(class='score1' onClick='incrementValue1()') 
         div(class='score2' onClick='incrementValue2()') 
       
       section(class='a')
         h2(class='titleQ') Penjelasan Soal 3
-        ul(class='question')
+        ul(class='expl')
           li.h3
-          li Pada saat kalahnya pasukan Nazi pada beberapa pertempuran dari 1943 hingga &quot;Pertempuran Berlin&quot; 
-          li yang terjadi pada tahun 1945, Adolf Hilter menikahi kekasih lamanya,<strong>Eva Braun</strong>. Tanggal 30 April 1945, kurang
-          li dari dua hari kemudian, keduanya bunuh diri agar tidak ditangkap Angkatan Darat Merah (Uni Soviet), lalu mayat mereka dibakar.
+          li Pada tanggal 30 April 1945, Adolf Hitler bunuh diri bersama dengan istrinya, Eva Braun untuk menghindari tentara Soviet yang hanya berjarak beberapa blok dari Reich Chancellery.
         div(class='score1' onClick='incrementValue1()') 
         div(class='score2' onClick='incrementValue2()')
       
@@ -149,9 +150,9 @@ html
       
       section(class='a')
         h2(class='titleQ') Penjelasan Soal 4
-        ul(class='question')
+        ul(class='expl')
           li.h3
-          li Tanya orang yang nyusun tempatnya.
+          li Kehendak Tuhan.
         div(class='score1' onClick='incrementValue1()') 
         div(class='score2' onClick='incrementValue2()')
 
@@ -185,11 +186,9 @@ html
       
       section(class='a')
         h2(class='titleQ') Penjelasan Soal 2
-        ul(class='question')
+        ul(class='expl')
           li.h3
-          li Sandra &quot;Sandy&quot; Cheeks, atau yang lebih sering disapa Sandy Cheeks Sangatlah menyukai Karate 
-          li dan dia sering melakukan &quot;The Karate&quot; bersama Sahabatnya, Spongebob Squarepants.
-          li Selain itu dia juga suka meminum saus yang sangat pedas, berselancar, dan beberapa kegiatan Extreme lainnya.
+          li Sandra &quot;Sandy&quot; Cheeks, lebih sering disapa Sandy Cheeks sangat menyukai Karate serta beberapa kegiatan Extreme lainnya.
         div(class='score1' onClick='incrementValue1()') 
         div(class='score2' onClick='incrementValue2()')
       
@@ -199,17 +198,18 @@ html
           li.h3
           li 7.	James Watt adalah penemu 
           li &quot;Listrik&quot; pertama di dunia.
-        ul(class='choice')
+        ul(class='choice') 
           li(class='tf1 wrong' onClick='SelectedW(6)' onmouseover='lock()') True
           li(class='tf2 correct' onClick='SelectedC()' onmouseover='lock()') False
+        div(class='block')
         div(class='score1' onClick='incrementValue1()') 
         div(class='score2' onClick='incrementValue2()')
       
       section(class='a')
         h2(class='titleQ') Penjelasan Soal 7
-        ul(class='question')
+        ul(class='expl')
           li.h3
-          li Orang yang menemukan Listrik pertama kali adalah <strong>Michael Faraday</strong> yang dijuluki juga sebagai &quot;Bapak Listrik&quot; 
+          li Listrik pertama kali ditemukan oleh <strong>Michael Faraday</strong> yang dijuluki juga sebagai &quot;Bapak Listrik&quot;.
         div(class='score1' onClick='incrementValue1()') 
         div(class='score2' onClick='incrementValue2()')
       
@@ -219,12 +219,13 @@ html
           li.h3
           li Berapakah jumlah pemain dalam 
           li permainan Ice Hockey ?
+        div(class='block')
         div(class='score1' onClick='incrementValue1()')
         div(class='score2' onClick='incrementValue2()')
         
       section(class='a')
         h2(class='titleQ') Penjelasan Soal 8
-        ul(class='question')
+        ul(class='expl')
           li.h3
           li Pemain dalam satu regu yang dipakai pada saat permainan &quot;Ice Hockey&quot; berlangsung berjumlah 6 pemain.
         div(class='score1' onClick='incrementValue1()') 
@@ -246,7 +247,7 @@ html
        
       section(class='a')
         h2(class='titleQ') Penjelasan Soal 9
-        ul(class='question')
+        ul(class='expl')
           li.h3
           li Karena jeruk emang kaya akan Vitamin C.
         div(class='score1' onClick='incrementValue1()') 
@@ -258,6 +259,7 @@ html
           li.h3
           li Pada tahun berapa film hasil kolaborasi
           li Disney dan Pixar, <i>Wall-E</i>, dirilis?
+        div(class='block')
         div(class='score1' onClick='incrementValue1()') 
         div(class='score2' onClick='incrementValue2()')
 

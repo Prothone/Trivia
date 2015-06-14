@@ -113,6 +113,20 @@ right:120px;
 top:250px;
 }
 
+.tf1{
+display : block;
+position:absolute;
+left:120px;
+top:250px;
+margin-bottom:100px;
+}
+
+.tf2{
+position:absolute;
+right:120px;
+top:250px;
+}
+
 .a {
 background-image:url("img/BG.jpg");
 opacity:0.9;
